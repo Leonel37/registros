@@ -12,5 +12,6 @@ input.button {margin: 20px 180px 20px 50px; background-color: rgb(20, 89, 192); 
 input.button1 {margin: 20px 180px 20px 50px; background-color: rgb(80, 81, 82); display:inline-block; color:white; font-size: x-large;}
 input.button2 {margin: 20px 180px 20px 50px; background-color: rgb(58, 180, 21); display:inline-block; color:white; font-size: x-large;}
 input {font-size: 16px;}
-select {font-size: 16px;} 
+div select {font-size: 20px;}
+select.form-select {font-size: 16px;}
 p.nota {font-size: 12px;}
