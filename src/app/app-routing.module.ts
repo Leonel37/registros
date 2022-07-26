@@ -1,21 +1,22 @@
-import { HomeComponent } from './components/home/home.component';
 import { RegistroComponent } from './components/registro/registro.component';
-import { LoginComponent } from './components/login/login.component';
-import { AppComponent } from './app.component';
-import { AsistentesComponent } from './components/asistentes/asistentes.component';
-import { ParticipantesComponent } from './components/participantes/participantes.component';
-import { AdministradorComponent } from './components/administrador/administrador.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { AdministradorComponent } from './components/administrador/administrador.component';
+import { AsistentesComponent } from './components/asistentes/asistentes.component';
+import { LoginComponent } from './components/login/login.component';
+import { ParticipantesComponent } from './components/participantes/participantes.component';
+import { EmprendeComponent } from './components/emprende/emprende.component';
 
 const routes: Routes = [
-  {path:'login',component:LoginComponent},
-  {path:'administrador',component:AdministradorComponent},
-  {path:'participantes',component:ParticipantesComponent},
-  {path:'asistentes',component:AsistentesComponent},
-  {path:'registro',component:RegistroComponent},
-  {path:'home',component:HomeComponent},
-  {path:'',component:HomeComponent}
+  //{path: '', component:AppComponent},
+  {path: 'home', component:EmprendeComponent},
+  {path: 'login', component:LoginComponent},
+  {path: 'administrador', component:AdministradorComponent},
+  {path: 'participantes', component:ParticipantesComponent},
+  {path: 'asistente', component:AsistentesComponent},
+  {path: 'registro', component:RegistroComponent}
+ // {path: 'emprende', component:EmprendeComponent}
 ];
 
 @NgModule({

@@ -10,7 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
 import { PiePaginaComponent } from './components/pie-pagina/pie-pagina.component';
 import { RegistroComponent } from './components/registro/registro.component';
-import { HomeComponent } from './components/home/home.component';
+import { LateralComponent } from './components/lateral/lateral.component';
+import { EmprendeComponent } from './components/emprende/emprende.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './components/home/home.component';
     NavegacionComponent,
     PiePaginaComponent,
     RegistroComponent,
-    HomeComponent
+    LateralComponent,
+    EmprendeComponent
   ],
   imports: [
     BrowserModule,
