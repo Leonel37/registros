@@ -13,6 +13,9 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { LateralComponent } from './components/lateral/lateral.component';
 import { EmprendeComponent } from './components/emprende/emprende.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import { EmprendeComponent } from './components/emprende/emprende.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

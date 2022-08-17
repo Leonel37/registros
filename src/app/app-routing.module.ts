@@ -13,11 +13,21 @@ const routes: Routes = [
   {path: 'home', component:EmprendeComponent},
   {path: 'login', component:LoginComponent},
   {path: 'administrador', component:AdministradorComponent},
-  {path: 'participantes', component:ParticipantesComponent},
+  {
+    path: '',
+    redirectTo: '/participantes',
+    pathMatch: 'full'
+  },
+  
+  {path: 'participantes/add', component:ParticipantesComponent},
+  {path: 'participantes/edit/:id_TP/:id_CP/:id_RP/:Id_Carrera/:Id_Grupo/:id_In', component:ParticipantesComponent},
   {path: 'asistente', component:AsistentesComponent},
   {path: 'registro', component:RegistroComponent}
  // {path: 'emprende', component:EmprendeComponent}
+
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
